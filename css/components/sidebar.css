@@ -1,0 +1,60 @@
+.sidebar {
+	position: fixed;
+	width: 210px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgb(30,30,30);
+  color: white;
+  padding-left: 10px;
+  font-size: 14px;
+  box-shadow: 4px 0 15px 4px rgba(0,0,0,0.6);
+  transition: width 0.3s ease, background-color 0.3s ease, box-shadow 0.5s ease;
+  z-index: 10;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding-left: 0px;
+
+}
+
+.sidebar a {
+  color: white;
+	transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+
+.sidebar a:hover {
+	color: grey;
+  padding-left: 6px;
+}
+
+.sidebar h3 {
+	margin-top: 50px;
+	font-size: 16px;
+}
+
+.page-content {
+	padding-left: 215px;
+}
+
+@media (min-width: 901px) {
+  .sidebar:hover {
+    width: 215px;
+    background-color: rgb(20,20,20);
+    box-shadow: 7px 0 25px 4px rgba(0,0,0,0.7);
+  }
+}
+
+@media (max-width: 900px) {
+  .sidebar {
+    position: static;
+    width: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .page-content {
+    padding-left: 0;
+  }
+}
